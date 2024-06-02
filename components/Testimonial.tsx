@@ -28,7 +28,7 @@ const Testimonial = ({ setSelectedPage }: ComponentProps) => {
                     <Image width={650} height={650} src="/testimonial-main.png" alt="" />
                     <div className="flex flex-col gap-2">
                         <h1 className="font-bold text-xl w-5/6 md:w-[60%]">The Best Financial Accounting App Ever !</h1>
-                        <p className="w-3/4">Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
+                        <p className="md:w-3/4 w-11/12">Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
                         <Image className="py-1" src='/testimonial-user.png' alt="user" width={150} height={150} />
                         <h1 className="font-medium">Nick Jonas</h1>
                     </div>

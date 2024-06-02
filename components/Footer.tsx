@@ -3,6 +3,9 @@ import { RiMailFill, RiPhoneFill } from '@remixicon/react'
 import React from 'react'
 
 const Footer = () => {
+    const footerLinks = (text: string) => {
+        return <p className='hover:font-medium transition-all'>{text}</p>
+    }
   return (
     <footer className="w-full pt-20">
         <div className="w-5/6 mx-auto">
@@ -24,29 +27,29 @@ const Footer = () => {
 
             <div className="flex flex-col mt-5 md:mt-0 gap-5 md:px-10">
               <h1 className="text-2xl font-bold">Links</h1>
-              <p>Home</p>
-              <p>About</p>
-              <p>Bookings</p>
-              <p>Blog</p>
+              {footerLinks('Home')}
+              {footerLinks('About')}
+              {footerLinks('Bookins')}
+              {footerLinks('Blog')}
             </div>
 
             <div className="flex flex-col mt-6 md:mt-0 gap-5 md:px-4">
               <h1 className="text-2xl font-bold">Legal</h1>
-              <p>Terms of use</p>
-              <p>Legal Policy</p>
-              <p>Cookie Policy</p>
+              {footerLinks('Terms of use')}
+              {footerLinks('Legal Policy')}
+              {footerLinks('Cookie Policy')}
             </div>
 
             <div className="flex flex-col mt-6 md:mt-0 gap-5 md:px-4">
               <h1 className="text-2xl font-bold">Product</h1>
-              <p>Live Chat</p>
-              <p>Take Tour</p>
-              <p>Reviews</p>
+              {footerLinks('Live Chat')}
+              {footerLinks('Take TOUR')}
+              {footerLinks('Reviews')}
             </div>
 
             <div className="flex flex-col mt-6 md:mt-0 gap-5">
               <h1 className="text-2xl font-bold">Newsletter</h1>
-              <p>Stay upto Date</p>
+              {footerLinks('Stay upto Date')}
               <div className="flex">
                 <input type="text" placeholder="Your Email" className="p-4 text-center focus:outline-none w-[120px]"/>
                 <ActionBtn text='Subscribe'/>
