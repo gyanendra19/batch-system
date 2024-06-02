@@ -50,7 +50,8 @@ const Navbar = ({ selectedPage, setSelectedPage }: ComponentProps) => {
             </div>
           </div>
 
-          <ActionBtn text = {'Download'}/>
+          <button className="px-7 hover:opacity-85 hover:scale-105 transition-all py-2 bg-black text-white">Download</button>
+
         </div>
       </nav>
     </>
