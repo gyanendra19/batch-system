@@ -2,6 +2,7 @@ import { Pages } from '@/utils/types'
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { RiCloseLine, RiMenuLine } from '@remixicon/react'
+import { ActionBtn } from '@/utils/shared'
 
 interface ComponentProps {
   selectedPage: Pages
@@ -28,9 +29,10 @@ const Navbar = ({ selectedPage, setSelectedPage }: ComponentProps) => {
         <div className={`absolute left-0 z-[1500] bg-black h-screen w-[250px] text-white top-0 p-14 flex flex-col gap-6 ${showNav ? '' : 'hidden'}`}>
           <RiCloseLine onClick={() => setShowNav(false)} color='white' />
           <NavBtn>Home</NavBtn>
+          <NavBtn>Features</NavBtn>
+          <NavBtn>Gallery</NavBtn>
           <NavBtn>About Us</NavBtn>
           <NavBtn>Pricing</NavBtn>
-          <NavBtn>Features</NavBtn>
         </div>
         <div className="w-5/6 mx-auto flex justify-between items-center relative">
           <div className="flex items-center md:gap-10 gap-2">
@@ -41,13 +43,14 @@ const Navbar = ({ selectedPage, setSelectedPage }: ComponentProps) => {
             </div>
             <div className="md:flex hidden gap-8 font-semibold">
               <NavBtn>Home</NavBtn>
+              <NavBtn>Features</NavBtn>
+              <NavBtn>Gallery</NavBtn>
               <NavBtn>About Us</NavBtn>
               <NavBtn>Pricing</NavBtn>
-              <NavBtn>Features</NavBtn>
             </div>
           </div>
 
-          <button className="px-7 py-2 bg-black text-white">Download</button>
+          <ActionBtn text = {'Download'}/>
         </div>
       </nav>
     </>

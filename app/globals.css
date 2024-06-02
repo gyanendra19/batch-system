@@ -8,3 +8,7 @@ html, body{
   width: 100%;
   font-family: "Work Sans", sans-serif;
 }
+
+.middle{
+  transform: translate(-50%, -50%);
+}

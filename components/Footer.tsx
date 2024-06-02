@@ -1,3 +1,4 @@
+import { ActionBtn } from '@/utils/shared'
 import { RiMailFill, RiPhoneFill } from '@remixicon/react'
 import React from 'react'
 
@@ -48,7 +49,7 @@ const Footer = () => {
               <p>Stay upto Date</p>
               <div className="flex">
                 <input type="text" placeholder="Your Email" className="p-4 text-center focus:outline-none w-[120px]"/>
-                <button className="px-7 py-2 bg-black text-white">Subscribe</button>
+                <ActionBtn text='Subscribe'/>
               </div>
             </div>
           </div>

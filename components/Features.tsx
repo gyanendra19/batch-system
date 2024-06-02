@@ -24,7 +24,7 @@ const Features = ({setSelectedPage} :ComponentProps) => {
         <motion.div
         onViewportEnter={() => setSelectedPage(Pages.Features)}
         id='features' className="w-full relative">
-                <Image src='/color-ellipse-1.png' alt='ellipse' width={200} height={200} className='absolute right-0 top-0'/>
+                <Image src='/color-ellipse-1.png' alt='ellipse' width={200} height={200} className='absolute md:block hidden right-0 top-0'/>
             <motion.div
             initial = 'hidden'
             whileInView='visible'

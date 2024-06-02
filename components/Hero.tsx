@@ -1,3 +1,4 @@
+import { ActionBtn } from '@/utils/shared';
 import { Pages } from '@/utils/types';
 import { RiPlayCircleLine } from '@remixicon/react'
 import { motion } from 'framer-motion'
@@ -23,13 +24,14 @@ const Hero = ({setSelectedPage} : ComponentProps) => {
     className="pt-32 w-full">
       <div className="w-11/12 ml-auto">
         <div className="flex md:flex-row flex-col">
+
           <div className="basis-1/2 flex flex-col gap-6 relative">
             <div className="before:absolute before:hidden md:before:block before:-z-50 before:w-[200px] before:content-ellipse-hero before:-top-32 before:left-10">
               <h1 className="md:text-6xl text-2xl font-black">Make the Best Financial Decisions</h1>
             </div>
             <p>Cum et convallis risus placerat aliquam, nunc. Scelerisque aliquet faucibus tincidunt eu adipiscing sociis arcu lorem porttitor.</p>
             <div className="flex gap-6 text-sm">
-              <button className="px-7 py-2 bg-black text-white">Get Started</button>
+              <ActionBtn text='Get Started' />
               <p className="flex gap-2 items-center font-medium "><span><RiPlayCircleLine /></span> Watch Video</p>
             </div>
             <img src="./strip.png" alt="" />

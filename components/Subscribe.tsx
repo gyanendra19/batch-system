@@ -13,6 +13,14 @@ const Subscribe = ({setSelectedPage} :ComponentProps) => {
         <motion.div
         id='pricing'
         onViewportEnter={() => setSelectedPage(Pages.Pricing)}
+        initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+                hidden: { scale: 0.8 },
+                visible: { scale: 1 }
+            }}
         className="w-full md:mt-20 md:mb-40 py-20 relative">
             <Image className="absolute -top-10 left-0 -z-10" src='/color-ellipse.png' alt="ellipse" width={400} height={400} />
             <div className="w-5/6 mx-auto flex md:pt-32 flex-col text-white gap-3 justify-center relative">
