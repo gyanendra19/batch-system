@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <main className="w-full h-fit relative">
       <div onClick={() => setOverlay(false)} className={`w-full top-0 h-full bg-black opacity-45 z-[2000] absolute ${overlay ? '' : 'hidden'}`}></div>
-      <div className={`fixed z-[2500] left-1/2 top-1/2 middle ${overlay ? '' : 'hidden'}`}>
-        <Image src={`/${lightImage}.png`} alt=""  width={1000} height={1000}/>
+      <div className={`fixed z-[2500] w-11/12 top-1/2 middle left-1/2 ${overlay ? '' : 'hidden'}`}>
+        <img className='' src={`/${lightImage}.png`} alt=""/>
       </div>
 
       <Navbar selectedPage = {selectedPage} setSelectedPage = {setSelectedPage}/>
