@@ -89,7 +89,7 @@ const Features = ({setSelectedPage} :ComponentProps) => {
                             <div className="p-2 bg-color-primary rounded-full"><RiShiningLine color="white" size={16} /></div>
                             <h1 className="font-bold text-xl">Fully Customizable</h1>
                         </div>
-                        <p className="w-5/6">Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
+                        <p className="md:w-5/6">Arcu at dictum sapien, mollis. Vulputate sit id accumsan, ultricies. In ultrices malesuada elit mauris etiam odio. Duis tristique lacus, et blandit viverra nisl velit. Sed mattis rhoncus, diam suspendisse sit nunc, gravida eu. Lectus eget eget ac dolor neque lorem sapien, suspendisse aliquam.</p>
                     </div>
                 </div>
             </motion.div>
