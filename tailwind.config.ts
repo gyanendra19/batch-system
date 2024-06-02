@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,11 +9,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      content : {
+        "ellipse-hero": "url('/color-eclipse.png')",
+        "frame": "url('/frame.png')"
       },
+      colors:{
+        'color-primary' : "#FF5555"
+      },
+      backgroundImage: (theme) => ({
+        'line-gradient' : "linear-gradient(86deg, rgba(255,255,255,1) 7%, rgba(105,105,105,0.8407738095238095) 52%, rgba(255,255,255,1) 96%)"
+      })
     },
   },
   plugins: [],
