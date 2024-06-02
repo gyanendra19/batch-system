@@ -2,7 +2,6 @@ import { Pages } from '@/utils/types'
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { RiCloseLine, RiMenuLine } from '@remixicon/react'
-import { ActionBtn } from '@/utils/shared'
 
 interface ComponentProps {
   selectedPage: Pages
@@ -50,7 +49,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: ComponentProps) => {
             </div>
           </div>
 
-          <ActionBtn text = {'Download'}/>
+          <button className="px-7 hover:opacity-85 hover:scale-105 transition-all py-2 bg-black text-white">Download</button>
         </div>
       </nav>
     </>
